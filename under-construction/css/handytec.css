@@ -1,0 +1,45 @@
+@import "compass/css3";
+
+body {
+    background-color: #1a1a1b;
+}
+
+.containerLogo {
+  margin: 60px auto 0 auto;
+  text-align: center;
+  width: 50%;
+  height:50%;
+}
+
+#logo {
+  display: inline-block;
+  width: 70%;
+  height:70%;
+}
+
+#small{
+  animation: fadein 3s infinite alternate;
+  -webkit-animation-delay: 1s; 
+  animation-delay: 1s;
+}
+
+#medium{
+  animation: fadein 3s infinite alternate;
+  -webkit-animation-delay: 2s; 
+  animation-delay: 2s;
+}
+
+#big{
+  animation: fadein 3s infinite alternate;
+  -webkit-animation-delay: 3s; 
+  animation-delay: 3s;
+}
+
+@keyframes fadein {
+  from{
+    opacity: 0.3;
+  }
+  to{
+    opacity: 1;
+  }
+}
