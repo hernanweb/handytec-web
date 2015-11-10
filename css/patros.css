@@ -55,6 +55,9 @@
 }
 .cb-slideshow li:nth-child(1) span {
     background-image: url(../images/unsplash1.jpg);
+    background-repeat:no-repeat;
+    background-size: 100% 120%;
+
 }
 .cb-slideshow li:nth-child(2) span {
     background-image: url(../images/unsplash2.jpg);
@@ -63,6 +66,8 @@
     -o-animation-delay: 6s;
     -ms-animation-delay: 6s;
     animation-delay: 6s;
+    background-repeat:no-repeat;
+    background-size: 100% 122%;
 }
 .cb-slideshow li:nth-child(3) span {
     background-image: url(../images/unsplash3.jpg);
@@ -79,6 +84,8 @@
     -o-animation-delay: 18s;
     -ms-animation-delay: 18s;
     animation-delay: 18s;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
 }
 .cb-slideshow li:nth-child(5) span {
     background-image: url(../images/unsplash5.jpg);
@@ -87,6 +94,8 @@
     -o-animation-delay: 24s;
     -ms-animation-delay: 24s;
     animation-delay: 24s;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
 }
 .cb-slideshow li:nth-child(6) span {
     background-image: url(../images/unsplash6.jpg);
