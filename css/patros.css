@@ -67,7 +67,7 @@
     -ms-animation-delay: 6s;
     animation-delay: 6s;
     background-repeat:no-repeat;
-    background-size: 100% 122%;
+    background-size: 100% 130%;
 }
 .cb-slideshow li:nth-child(3) span {
     background-image: url(../images/unsplash3.jpg);
@@ -95,7 +95,7 @@
     -ms-animation-delay: 24s;
     animation-delay: 24s;
     background-repeat:no-repeat;
-    background-size: 100% 100%;
+    /*background-size: 100% 100%;*/
 }
 .cb-slideshow li:nth-child(6) span {
     background-image: url(../images/unsplash6.jpg);
@@ -369,17 +369,14 @@
 /*Containers*/
 
 .wrapper1{
-    position: relative;
     width: 100%;
 }
 
 .cb-slideshow .container-left {
-    position: absolute;
     left: 0px;
     width: 48%;
     margin-left: 2%;
     align-content: center;
-    padding: 10px 10px 10px 10px;
 }
 /*@media (min-width: 768px) {
     .cb-slideshow .container-left {
@@ -398,13 +395,11 @@
 }*/
 
 .cb-slideshow .container-right {
-    position: absolute;
     right: 0px;
     margin-left: 52%;
     margin-right: 2%;
     width: 46%;
     align-content: center;
-    padding: 10px 10px 10px 10px;
 }
 
 .cb-slideshow .container-left img {
@@ -1249,7 +1244,7 @@ img.divider{
     text-decoration: none;
 }
 .homeservices1 p{
-    color: #dff0d8;
+    color: #d9edf7;
 }
 #services {
     padding-top: 60px;
