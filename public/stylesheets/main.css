@@ -85,7 +85,7 @@
     -ms-animation-delay: 20s;
     animation-delay: 20s;
     background-repeat:no-repeat;
-    background-size: 100% 110%;
+    background-size: 100% 120%;
 }
 .cb-slideshow li:nth-child(5) span {
     background-image: url(../images/slider/unsplash5.jpg);
@@ -95,7 +95,6 @@
     -ms-animation-delay: 26s;
     animation-delay: 26s;
     background-repeat:no-repeat;
-    /*background-size: 100% 100%;*/
 }
 .cb-slideshow li:nth-child(6) span {
     background-image: url(../images/slider/unsplash6.jpg);
@@ -112,6 +111,7 @@
     -o-animation-delay: 38s;
     -ms-animation-delay: 38s;
     animation-delay: 38s;
+    background-size: 100% 105%;
 }
 .cb-slideshow li:nth-child(2) div {
     -webkit-animation-delay: 8s;
@@ -408,51 +408,17 @@
     margin-left: 2%;
     align-content: center;
 }
-@media screen and (max-width: 769px) {
-    .cb-slideshow .container-left {
-        left: 0px;
-        width: 96%;
-        margin-left: 2%;
-        margin-right: 2%;
-        align-content: center;
-    }
-    .cb-slideshow .container-left img{
-        visibility: hidden;
-    }
-    
+
+.cb-slideshow .container-left h4 {
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 25px;
 }
 
-@media screen and (max-width: 769px) {
-
-    .cb-slideshow .container-right {
-        right: 0px;
-        width: 96%;
-        margin-left: 2%;
-        margin-right: 2%;
-        align-content: center;
-    }
-
-    .cb-slideshow .container-right img{
-        visibility: hidden;
-    }
-
+.cb-slideshow .container-left img {
+    max-width:80%;
+    max-height:80%;
 }
-/*@media (min-width: 992px) {
-    .cb-slideshow .container-left {
-        left: 0px;
-        width: 48%;
-        margin-left: 2%;
-        align-content: center;
-    }
-}
-@media (min-width: 1200px) {
-    .cb-slideshow .container-left {
-        left: 0px;
-        width: 48%;
-        margin-left: 2%;
-        align-content: center;
-    }
-}*/
 
 .cb-slideshow .container-right {
     right: 0px;
@@ -461,45 +427,16 @@
     align-content: center;
 }
 
-.cb-slideshow .container-left img {
-    max-width:80%;
-    max-height:80%;
-}
-
-.cb-slideshow .container-right img {
-    max-width:80%;
-    max-height:80%;
-}
-
-
-.cb-slideshow .container-left h4 {
-    padding-left: 10%;
-    padding-right: 10%;
-    line-height: 25px;
-}
-
 .cb-slideshow .container-right h4 {
     padding-left: 10%;
     padding-right: 10%;
     line-height: 25px;
 }
 
-/*@media (min-width: 768px) {
-    .cb-slideshow .container-rigth {
-        width: 750px
-    }
+.cb-slideshow .container-right img {
+    max-width:80%;
+    max-height:80%;
 }
-@media (min-width: 992px) {
-    .cb-slideshow .container-right {
-        width: 970px
-    }
-}
-@media (min-width: 1200px) {
-    .cb-slideshow .container-right {
-        width: 1170px
-    }
-}*/
-
 
 img.displayed {
     display: block;
@@ -770,6 +707,11 @@ footer {
     color: #f7f7f7;
     z-index: 99;
     position: absolute;
+    float:left; 
+    padding-top: 0px;
+    margin-left: 3%;
+    margin-top: 2%;
+    width: 60%;
 }
 #contact .fa {
     /*padding-right: 31px;*/
@@ -1075,9 +1017,8 @@ img.divider{
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:focus,
 .navbar-inverse .navbar-nav>.active>a:hover {
-    color: #23539C;
-    background-color: transparent;
-    border-bottom: 3px solid #326FB7;
+    color: #2E68A5;
+    border-bottom: 3px solid #2E68A5;
     margin-bottom: 0px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -1114,7 +1055,8 @@ img.divider{
         border: none;
     }
     .navbar-inverse .navbar-nav>li {
-        border-bottom: 1px solid #FFF;
+        border-bottom: 1px solid #000000;
+        background-color: rgb(234, 234, 234);
     }
     .navbar-inverse .navbar-nav>li:hover {
         border-bottom: 1px solid #FFF;
@@ -1128,10 +1070,89 @@ img.divider{
     }
     .navbar-brand img {
         margin-top: -40px;
-        width: 35%;
+        width: 60%;
         padding-top: 0px;
         padding-left: 10px;
     }
+
+    #contact {
+        background-color: rgba(45, 45, 45, 0.56);
+        color: #f7f7f7;
+        z-index: 99;
+        position: absolute;
+        float:left; 
+        padding-top: 0px;
+        margin-left: 3%;
+        margin-top: 2%;
+        width: 90%;
+    }
+
+    .cb-slideshow .container-left {
+        left: 0px;
+        width: 96%;
+        align-content: center;
+    }
+
+    .cb-slideshow .container-left h4 {
+        padding-left: 10%;
+        padding-right: 10%;
+        line-height: 15px;
+        font-size: 12px;
+    }
+
+    .cb-slideshow .container-left h3 {
+        line-height: 25px;
+        font-size: 25px;
+    }
+
+    .cb-slideshow .container-left img {
+        visibility: hidden;
+    }
+
+    .cb-slideshow .container-right {
+        left: 0px;
+        width: 96%;
+        margin-left: 0%;
+        align-content: center;
+    }
+
+    .cb-slideshow .container-right h3 {
+        line-height: 25px;
+        font-size: 25px;
+    }
+
+    .cb-slideshow .container-right h4 {
+        padding-left: 10%;
+        padding-right: 10%;
+        line-height: 15px;
+        font-size: 12px;
+    }
+
+    .cb-slideshow .container-right img {
+        visibility: hidden;
+    }
+
+    header.carousel {
+        height: 100%;
+        max-height: 460px;
+    }
+
+    .cb-slideshow li:nth-child(5) span {
+        background-image: url(../images/slider/unsplash5.jpg);
+        -webkit-animation-delay: 26s;
+        -moz-animation-delay: 26s;
+        -o-animation-delay: 26s;
+        -ms-animation-delay: 26s;
+        animation-delay: 26s;
+        background-repeat:no-repeat;
+        margin-left: -70px;
+        width: 150%;    
+    }
+
+    .intro-scroller {
+        visibility: hidden;
+    }
+
 }
 .carousel-caption {
     position: absolute;
@@ -1296,7 +1317,7 @@ img.divider{
 }
 .navbar-inverse .navbar-toggle:focus,
 .navbar-inverse .navbar-toggle:hover {
-    background-color: rgba(57, 155, 193, 0.43);;
+    background-color: rgba(0, 138, 239, 0.45);
 }
 .homeservices1 {
     padding-top: 40px;
@@ -2029,13 +2050,7 @@ ul.nav-pills {
     }
 
 }
-#contact {
-    float:left; /* add this */
-    padding-top: 0px;
-    margin-left: 3%;
-    margin-top: 2%;
-    width: 60%;
-}
+
 #location {
     overflow: hidden; /* if you don't want #second to wrap below #first */
 }
