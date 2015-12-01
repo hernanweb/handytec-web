@@ -989,9 +989,7 @@ img.divider{
     position: center;
 }
 .navbar-inverse {
-    background-color: rgba(255, 255, 255, 0.72);
-    opacity: 0.90;
-    opacity: 0.85;
+    background-color: rgb(255, 255, 255);
     font-size: 15px;
     height: 100px;
     /*    padding-top:16px;  
@@ -1318,7 +1316,10 @@ img.divider{
 }
 .navbar-inverse .navbar-toggle:focus,
 .navbar-inverse .navbar-toggle:hover {
-    background-color: rgba(0, 138, 239, 0.45);
+    background-color: #505050;
+}
+.navbar-inverse .navbar-toggle:hover .icon-bar {
+    background-color: white;
 }
 .homeservices1 {
     padding-top: 40px;
@@ -2096,7 +2097,7 @@ ul.nav-pills {
     background-color:transparent;;
     border-radius: 0px;
     border: 1px solid white;
-    color: #fafafa;
+    color: white;
     display: block;
     width: 100%;
     height: 34px;
@@ -2262,4 +2263,8 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 .team-info span {
     color: #059ACE;
     margin-bottom: 15px;
+}
+
+select option{
+    color:black;
 }
