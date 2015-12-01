@@ -88,26 +88,27 @@ router.post('/', function(req, res, next) {
     transporter.close();
 
     /* Store in DB new client */
-    var current_date = new Date()
+    function getFormattedDate() {
+        var date = new Date();
+        var str = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + " " +  date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 
-    function formatDate(curr_date) {
-      return curr_date.getFullYear() + '-' +
-        (curr_date.getMonth() < 9 ? '0' : '') + (curr_date.getMonth()+1) + '-' +
-        (curr_date.getDate() < 10 ? '0' : '') + curr_date.getDate();
+        return str;
     }
+
+    var current_date = getFormattedDate();
 
     var dev = false;
     var device = 'WEB';
 
     console.log("Este es el device: " + req.body.device);
 
-    if (req.body.device){
+    if (req.body.device == "true"){
         device = 'MOB';
     }
 
     //Setup customer object
     var customer = {
-      DATE : formatDate(current_date),
+      DATE : current_date,
       NAME : req.body.client_name,
       LAST_NAME : req.body.client_lastname,
       EMAIL : req.body.email,
