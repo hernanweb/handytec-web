@@ -1,3 +1,14 @@
+/*#########################################################################################
+#
+# Author:       Diego Montufar
+# Date:         Nov/2015
+# File:         data.js
+# Context:      Server side code
+# Description:  Database Layer
+#
+#
+#########################################################################################*/
+
 var mysql      = require('mysql');
 
 var connection = mysql.createConnection({
@@ -11,11 +22,8 @@ exports.newCustomer = function(customer) {
 
     console.log("Proceeding to create new customer..");
 
-    connection.connect();
-
     connection.query('INSERT INTO CUSTOMER SET ?',customer, function(err, result) {
       if (!err){
-         // console.log('Success: ', result);
          return 1;
        }else{
          console.log('Error while performing Query:' + err);
@@ -23,7 +31,5 @@ exports.newCustomer = function(customer) {
        }
         
     });
-
-    connection.end();
 }
 

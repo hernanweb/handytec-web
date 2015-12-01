@@ -11,6 +11,17 @@
 
 $(document).ready(function(){
 
+  var status = getUrlParameter('status');
+
+  if (status == 1){
+    $.get("/templates/confirmation.html", function(data){
+        $( "#myConfirmationModal .modal-title" ).empty();
+        $( "#modal-confirmation-content" ).empty();
+        $( "#modal-confirmation-content" ).html(data);
+        $('#myConfirmationModal').modal('show'); 
+    });
+  }
+
   //Detect whether it is mobile or web device
   window.mobileAndTabletcheck = function() {
     var check = false;
@@ -208,6 +219,21 @@ $(document).ready(function(){
 });
 
 function gallery(){};
+
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
 
 var $itemsHolder = $('ul.port2');
 var $itemsClone = $itemsHolder.clone(); 
