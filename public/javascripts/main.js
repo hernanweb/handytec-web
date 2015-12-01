@@ -25,27 +25,33 @@ $(document).ready(function(){
   inicializemap();
 
   $( "#multi-link" ).click(function() {
-    $( "#myModal .modal-title" ).empty();
-    $( "#myModal .modal-title" ).append("Desarrollo Multiplataforma");
-    $( "#myModal .modal-body span" ).empty();
-    $( "#myModal .modal-body span" ).append("In computing, cross-platform, multi-platform, or platform independent, is an attribute conferred to computer software or computing methods and concepts that are implemented and inter-operate on multiple computer platforms.[1] Cross-platform software may be divided into two types; one requires individual building or compilation for each platform that it supports, and the other one can be directly run on any platform without special preparation, e.g., software written in an interpreted language or pre-compiled portable bytecode for which the interpreters or run-time packages are common or standard components of all platforms");
-    $('#myModal').modal('show'); 
+    $.get("/templates/multiplatform.html", function(data){
+        $( "#myModal .modal-title" ).empty();
+        $( "#myModal .modal-title" ).append("Desarrollo Multiplataforma");
+        $( "#modal-content" ).empty();
+        $( "#modal-content").html(data);
+        $('#myModal').modal('show'); 
+    });
   });
 
   $( "#multi-nube" ).click(function() {
-    $( "#myModal .modal-title" ).empty();
-    $( "#myModal .modal-title" ).append("Computación en la Nube");
-    $( "#myModal .modal-body span" ).empty();
-    $( "#myModal .modal-body span" ).append("Hola esta es una prueba");
-    $('#myModal').modal('show'); 
+    $.get("/templates/cloudcomputing.html", function(data){
+        $( "#myModal .modal-title" ).empty();
+        $( "#myModal .modal-title" ).append("Computación en la Nube");
+        $( "#modal-content" ).empty();
+        $( "#modal-content").html(data);
+        $('#myModal').modal('show'); 
+    });
   });
 
   $( "#multi-training" ).click(function() {
-    $( "#myModal .modal-title" ).empty();
-    $( "#myModal .modal-title" ).append("Programas de Capacitación");
-    $( "#myModal .modal-body span" ).empty();
-    $( "#myModal .modal-body span" ).append("Hola esta es una prueba");
-    $('#myModal').modal('show'); 
+    $.get("/templates/training.html", function(data){
+        $( "#myModal .modal-title" ).empty();
+        $( "#myModal .modal-title" ).append("Programas de Capacitación");
+        $( "#modal-content" ).empty();
+        $( "#modal-content").html(data);
+        $('#myModal').modal('show'); 
+    });
   });
 
   $('#mision_div_1').css('opacity', 0);

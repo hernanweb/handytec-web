@@ -553,8 +553,9 @@ a {
 }
 a:focus,
 a:hover {
-    color: #313131;
+    color: #FBFBFB;
     text-decoration: none;
+    background: rgb(5, 154, 206);
 }
 .img-portfolio {
     margin-bottom: 30px;
@@ -1613,11 +1614,14 @@ img.divider{
     max-width: 60px;
 }
 .btn-primary {
-    background-color: #399BC1;
-    border: none;
+    background-color: transparent;
+    border: solid;
+    color: #059ACE;
 }
 .btn-primary:hover {
     background-color: #2D2D2D;
+    border-style: solid;
+    border-color: #2D2D2D;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     transition-timing-function: ease;
@@ -1653,7 +1657,7 @@ img.divider{
     display: none;
 }
 .color1 {
-    background-color: #505050;
+    /*background-color: #505050;*/
 }
 .color1:hover {
     background-color: #353535;
@@ -2211,9 +2215,6 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 
 .button-link {
     padding: 10px 15px;
-    color: #059ACE;
-    border-style: solid;
-    border-color: #059ACE;
     display: block;
     width: 180px;
 }
